@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_seller_back"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/share"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_seller"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/busone" />
+
+            <TextView
+                android:id="@+id/tv_activity_seller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_seller"
+                android:layout_centerHorizontal="true"
+                android:text="Seller Name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_activity_seller_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_activity_seller_name"
+                android:layout_centerHorizontal="true"
+                android:text="Seller Name" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_seller"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/tv_activity_seller_type"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:menu="@menu/menu_seller" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_seller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_seller"/>
+
+</RelativeLayout>

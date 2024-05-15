@@ -9,6 +9,12 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import net.dkr.freelancing.fragments.HomeFragment;
+import net.dkr.freelancing.fragments.ManageOrderFragment;
+import net.dkr.freelancing.fragments.MessageFragment;
+import net.dkr.freelancing.fragments.ProfileFragment;
+import net.dkr.freelancing.fragments.SearchFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;

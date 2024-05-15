@@ -1,4 +1,4 @@
-package net.dkr.freelancing;
+package net.dkr.freelancing.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import net.dkr.freelancing.R;
 import net.dkr.freelancing.model.MessageModel;
 
 import java.util.List;

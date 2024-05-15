@@ -65,11 +65,11 @@
                 android:id="@+id/rv_recent_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rv_popular_view"
-                android:layout_margin="12dp"
+                android:layout_below="@+id/tv_recent_text"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/recent_view" />

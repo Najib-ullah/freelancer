@@ -1,4 +1,4 @@
-package net.dkr.freelancing;
+package net.dkr.freelancing.fragments;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import net.dkr.freelancing.R;
 import net.dkr.freelancing.adapter.AdapterInspire;
 import net.dkr.freelancing.adapter.AdapterPopular;
 import net.dkr.freelancing.adapter.AdapterRecent;

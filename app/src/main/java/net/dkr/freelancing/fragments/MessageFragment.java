@@ -1,4 +1,4 @@
-package net.dkr.freelancing;
+package net.dkr.freelancing.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import net.dkr.freelancing.R;
 import net.dkr.freelancing.model.MessageModel;
 
 import java.util.ArrayList;

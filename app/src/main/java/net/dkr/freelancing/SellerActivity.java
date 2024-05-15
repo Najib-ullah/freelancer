@@ -29,7 +29,7 @@ public class SellerActivity extends AppCompatActivity {
         ivBack = findViewById(R.id.iv_seller_back);
         bottomNavigationView = findViewById(R.id.bottom_seller);
 
-//
+//      for going previse page again
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

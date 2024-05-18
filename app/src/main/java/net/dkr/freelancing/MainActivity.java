@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomneviggation);
 
         getSupportFragmentManager().beginTransaction().add(new HomeFragment(),"HomeFragment").commit();
-        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayoutMain,new HomeFragment()).commit();
 
 
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                         fragment = new HomeFragment();
 
-                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,fragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayoutMain,fragment).commit();
                 return true;
             }
         });

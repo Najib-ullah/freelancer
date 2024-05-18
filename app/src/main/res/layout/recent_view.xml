@@ -9,6 +9,8 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       app:cardCornerRadius="15dp"
+      android:layout_margin="5dp"
+      android:elevation="12dp"
       android:outlineSpotShadowColor="@color/black"
       >
       <RelativeLayout
@@ -29,7 +31,7 @@
               android:layout_marginTop="12dp"
               android:layout_marginLeft="12dp"
               android:layout_marginRight="12dp"
-              android:src="@drawable/ic_account_circle"
+              android:src="@drawable/profiletwo"
               android:layout_below="@+id/recent_iv"
               />
 

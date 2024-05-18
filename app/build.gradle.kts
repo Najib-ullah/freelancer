@@ -41,6 +41,7 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment:2.7.7")
     implementation("androidx.navigation:navigation-ui:2.8.0-alpha07")
     implementation("androidx.annotation:annotation-jvm:1.7.1")
+//    implementation("com.android.car.ui:car-ui-lib:2.6.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.0-alpha03")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.0-alpha03")

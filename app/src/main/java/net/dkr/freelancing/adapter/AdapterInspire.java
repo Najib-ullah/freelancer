@@ -27,8 +27,8 @@ public class AdapterInspire extends RecyclerView.Adapter<AdapterInspire.InspirHo
     @NonNull
     @Override
     public InspirHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-View view = LayoutInflater.from(context).inflate(R.layout.inspired_view,parent,false);
-return new InspirHolder(view);
+    View view = LayoutInflater.from(context).inflate(R.layout.inspired_view,parent,false);
+    return new InspirHolder(view);
     }
 
     @Override
@@ -46,8 +46,8 @@ return new InspirHolder(view);
     }
 
     public class InspirHolder extends RecyclerView.ViewHolder{
-ImageView iv,rateiv,faovriteiv;
-TextView mainTexttv;
+            ImageView iv,rateiv,faovriteiv;
+            TextView mainTexttv;
 
         public InspirHolder(@NonNull View itemView) {
             super(itemView);

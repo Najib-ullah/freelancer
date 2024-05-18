@@ -8,8 +8,10 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="15dp"
         android:outlineSpotShadowColor="@color/black"
+        app:cardCornerRadius="15sp"
+        android:padding="5dp"
+        android:elevation="8dp"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -22,8 +24,8 @@
 
             <ImageView
                 android:id="@+id/iv_inspire_favorite"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_below="@+id/iv_inspire"
                 android:layout_alignRight="@+id/iv_inspire"
                 android:src="@drawable/favorite"
@@ -52,7 +54,7 @@
                     android:layout_marginLeft="12dp"
                     android:text="4.4"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -60,8 +62,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
-                    android:text="(43244)"
-                    android:textSize="18sp" />
+                    android:text="(444)"
+                    android:textSize="16sp" />
             </LinearLayout>
 
 
@@ -71,8 +73,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/linearLayout"
                 android:text="Main text"
+                android:maxLines="1"
                 android:layout_marginLeft="12dp"
-                android:textSize="30sp" />
+                android:textSize="24sp" />
 
 
             <LinearLayout
@@ -95,8 +98,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
-                    android:text="$678"
-                    android:textSize="26sp"
+                    android:text="$99"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
             </LinearLayout>
 

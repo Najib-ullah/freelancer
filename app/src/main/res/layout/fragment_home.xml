@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -37,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
                 android:textStyle="bold"
-                android:text="populare services"
+                android:text="Popular Services"
                 android:textSize="26sp" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -58,7 +59,7 @@
                 android:layout_below="@+id/rv_popular_view"
                 android:layout_margin="12dp"
                 android:textStyle="bold"
-                android:text="recently view and more"
+                android:text="Recently view and more"
                 android:textSize="26sp" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -81,6 +82,7 @@
                 android:outlineSpotShadowColor="@color/black"
                 app:cardCornerRadius="15sp"
                 android:padding="5dp"
+                android:elevation="8dp"
                 android:layout_below="@+id/rv_recent_view"
                 android:layout_margin="12dp">
 
@@ -96,8 +98,8 @@
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textStyle="bold"
-                        android:textSize="25sp"
-                        android:text="invite friends And up to 1999 $"
+                        android:textSize="24sp"
+                        android:text="invite friends and up to 19 $"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -109,8 +111,9 @@
                         />
                     <Button
                         android:id="@+id/btn_invite_friend"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:backgroundTint="@color/primary_main"
                         android:text="invite friends"
                         />
@@ -128,7 +131,7 @@
                 android:layout_margin="12dp"
                 android:textStyle="bold"
                 android:text="Inpsire by your browsing History"
-                android:textSize="26sp" />
+                android:textSize="24sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_inspire_view"

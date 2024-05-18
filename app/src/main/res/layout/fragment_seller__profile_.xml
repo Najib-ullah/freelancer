@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:id="@+id/profile"
-        android:background="@color/primary_light"
+        android:background="#393737"
         android:layout_height="200dp">
         <ImageView
             android:id="@+id/userAccoutProfile"
@@ -54,6 +54,7 @@
             android:id="@+id/notification"
             android:layout_height="40dp"
             android:src="@drawable/bell"
+            android:backgroundTint="@color/white"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"/>
@@ -72,10 +73,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="buyer mode"
+                android:text="seller mode"
+                android:textColor="@color/white"
                 android:layout_marginLeft="8dp"
-              android:layout_centerVertical="true"
-                android:gravity="center"/>
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                />
 
 
             <Switch
@@ -83,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-             android:layout_centerVertical="true"
+                android:layout_centerVertical="true"
                 android:text="Switch" />
 
 
@@ -107,28 +110,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:textSize="24sp"
-                android:text="My Mahir"
+                android:text="Selling"
                 android:textStyle="bold"
                 android:layout_marginLeft="12dp"
                 />
             <RelativeLayout
                 android:layout_marginTop="12dp"
                 android:layout_marginLeft="12dp"
-                android:id="@+id/relative_save_list"
+                android:id="@+id/relative_seller_Earnings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/favorite"
-                    android:id="@+id/ivFavirate"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/earnings"
+                    android:id="@+id/iv_earnings"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Saved List"
-                    android:layout_toEndOf="@id/ivFavirate"
+                    android:text="Earnings"
+                    android:layout_toEndOf="@id/iv_earnings"
                     android:layout_marginLeft="12dp"
                     android:layout_centerVertical="true"
                     android:textStyle="bold"/>
@@ -144,21 +147,21 @@
             <RelativeLayout
                 android:layout_marginTop="12dp"
                 android:layout_marginLeft="12dp"
-                android:id="@+id/relative2"
+                android:id="@+id/relative_custom_offer_templates"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/interest"
-                    android:id="@+id/ivmyinteraste"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/customoffertemplates"
+                    android:id="@+id/iv_custom_offer"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="My Interaste"
-                    android:layout_toEndOf="@id/ivmyinteraste"
+                    android:text="Custom offer templates"
+                    android:layout_toEndOf="@id/iv_custom_offer"
                     android:layout_marginLeft="12dp"
                     android:layout_centerVertical="true"
                     android:textStyle="bold"/>
@@ -171,32 +174,24 @@
                     />
 
             </RelativeLayout>
-            <TextView
-                android:id="@+id/GenralkCategorie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:text="General"
-                android:textStyle="bold"
-                android:layout_marginLeft="12dp"
-                />
+
             <RelativeLayout
                 android:layout_marginTop="12dp"
                 android:layout_marginLeft="12dp"
-                android:id="@+id/relative_settings"
+                android:id="@+id/relative_seller_share_gigs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/settings"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/sharegigs"
                     android:id="@+id/ivsettings"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Settings"
+                    android:text="Share Gigs"
                     android:layout_toEndOf="@id/ivsettings"
                     android:layout_marginLeft="12dp"
                     android:layout_centerVertical="true"
@@ -214,50 +209,51 @@
             <RelativeLayout
                 android:layout_marginTop="12dp"
                 android:layout_marginLeft="12dp"
-                android:id="@+id/relative4"
+                android:id="@+id/relative_seller_my_profile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/onlinestate"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/user"
                     android:id="@+id/ivshowOnlineStatus"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Show Online Status"
+                    android:text="My Profile"
                     android:layout_toEndOf="@id/ivshowOnlineStatus"
                     android:layout_marginLeft="12dp"
                     android:layout_centerVertical="true"
                     android:textStyle="bold"/>
 
-                <Switch
-                    android:id="@+id/switch1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_alignParentEnd="true"
+                    />
+
 
             </RelativeLayout>
             <RelativeLayout
                 android:layout_marginTop="12dp"
                 android:layout_marginLeft="12dp"
-                android:id="@+id/relative5"
+                android:id="@+id/relative_seller_manage_gigs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/payment"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/managegigs"
                     android:id="@+id/ivpayment"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Payment"
+                    android:text="Manage Gigs"
                     android:layout_toEndOf="@id/ivpayment"
                     android:layout_marginLeft="12dp"
                     android:layout_centerVertical="true"
@@ -274,20 +270,20 @@
             <RelativeLayout
                 android:layout_marginTop="12dp"
                 android:layout_marginLeft="12dp"
-                android:id="@+id/relative6"
+                android:id="@+id/relative_seller_availability"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/invite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/availability"
                     android:id="@+id/ivinviteFriends"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Invite Friends"
+                    android:text="Availability"
                     android:layout_toEndOf="@id/ivinviteFriends"
                     android:layout_marginLeft="12dp"
                     android:layout_centerVertical="true"
@@ -304,20 +300,20 @@
             <RelativeLayout
                 android:layout_marginTop="12dp"
                 android:layout_marginLeft="12dp"
-                android:id="@+id/relative7"
+                android:id="@+id/relative_seller_invite_friends"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/becomaseller"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/invitefrinends"
                     android:id="@+id/ivBecomeSeller"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Become a Seller"
+                    android:text="Invite Friends"
                     android:layout_toEndOf="@id/ivBecomeSeller"
                     android:layout_marginLeft="12dp"
                     android:layout_centerVertical="true"
@@ -331,36 +327,7 @@
                     />
 
             </RelativeLayout>
-            <RelativeLayout
-                android:layout_marginTop="12dp"
-                android:layout_marginLeft="12dp"
-                android:id="@+id/relative8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/support"
-                    android:id="@+id/ivsupport"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Support"
-                    android:layout_toEndOf="@id/ivsupport"
-                    android:layout_marginLeft="12dp"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"/>
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/right_arrow"
-                    android:layout_alignParentEnd="true"
-                    />
-
-            </RelativeLayout>
 
         </LinearLayout>
 

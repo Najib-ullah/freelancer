@@ -25,6 +25,8 @@ public class SellerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller);
+
+
         Toolbar toolbar=findViewById(R.id.toolbar_seller);
         ivBack = findViewById(R.id.iv_seller_back);
         bottomNavigationView = findViewById(R.id.bottom_seller);
@@ -41,7 +43,7 @@ public class SellerActivity extends AppCompatActivity {
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 //        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        getSupportFragmentManager().beginTransaction().add(new SellerAboutFragment(), "seller").replace(R.id.frameLayout_seller, new SellerAboutFragment()).commit();
+        getSupportFragmentManager().beginTransaction().add(new SellerAboutFragment(), "seller").replace(R.id.frameLayout_seller_about, new SellerAboutFragment()).commit();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -55,7 +57,7 @@ public class SellerActivity extends AppCompatActivity {
                 } else if (menuItem.getItemId() == R.id.menu_seller_review) {
                     fragment = new SellerReviewFragment();
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout_seller,fragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout_seller_about,fragment).commit();
 
                 return true;
             }
